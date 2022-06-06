@@ -3,10 +3,12 @@ import './ChatInput.scss';
 
 class ChatInput extends Component {
   render(){
-    return {
+    return (
       <div className='ChatInput'>
         <input onKeyDown={this.props.send} placeholder="Type a message...Hit Enter to send"></input>
       </div>
-    }
+    );
   }
 }
+
+export default ChatInput
