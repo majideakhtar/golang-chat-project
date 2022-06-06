@@ -23,6 +23,13 @@ class App extends Component{
     });
   }
 
+  send(event) {
+    if (event.keyCode === 13) {
+      sendMsg(event.target.value);
+      event.target.value = "";
+    }
+  }
+
   render(){
     return (
       <div className='App'>
